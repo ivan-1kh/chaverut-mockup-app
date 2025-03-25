@@ -12,10 +12,10 @@ function App() {
   const [userLoggedIn, setUserLoggedIn] = React.useState(false);
 
   return (
-    <div className="App">
+    <div className="App container-column">
 
       <header>
-        {userLoggedIn && <h1>Chaverut</h1>}
+        {userLoggedIn && <h1 className='container-row padding-v white-text'>Chaverut</h1>}
       </header>
 
       <Routes>

@@ -13,10 +13,10 @@ function NavigationBar() {
 
     return (
         <div>
-            <nav>
-                <Link to="/">Login</Link>
+            <nav className='container-row padding-v'>
+                <Link to="/" className='white-text'>Login</Link>
                 <br />
-                <Link to="/feed">Feed</Link>
+                <Link to="/feed" className='white-text'>Feed</Link>
             </nav>
         </div>
     );

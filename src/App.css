@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+html, body, #root {
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.white-text {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0,74,173,255);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0,74,173,255);
+}
+
+.margin-v {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.margin-h {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.padding-v {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padding-h {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* temp -- send to components ??? */
+
+.pfp {
+  width: 4rem;
+  border-radius: 10rem;
+}
+
+.chat-item {
+  border-radius: 1rem;
+  width: 95%;
+  background-color: rgba(0,74,173,255);
+}
+
+.large-text {
+  text-align: center;
+  font-size: 4.5rem;
 }
