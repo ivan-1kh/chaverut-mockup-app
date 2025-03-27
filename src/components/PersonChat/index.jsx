@@ -8,13 +8,13 @@ function PersonChat({ name, pfp }) {
 
     const handleNavigation = () => {
 
-        navigate('/chat here???');
+        navigate('/chats');
     };
 
     return (
         <div onClick={handleNavigation} className='container-row chat-item padding-v'>
             <img className='pfp' src={pfp} />
-            <h2 className='white-text'>{name}</h2>
+            <h2 className='white-text chat-item-name'>{name}</h2>
         </div>
     );
 }

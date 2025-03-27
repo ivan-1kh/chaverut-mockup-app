@@ -6,6 +6,9 @@ import LoginPage from "./pages/LoginPage";
 import FeedPage from "./pages/FeedPage";
 
 import NavigationBar from "./components/NavigationBar";
+import ChatsPage from './pages/ChatsPage';
+import ChatPage from './pages/ChatPage';
+import SharedCurriculumPage from './pages/SharedCurriculumPage';
 
 function App() {
 
@@ -15,12 +18,15 @@ function App() {
     <div className="App container-column">
 
       <header>
-        {userLoggedIn && <h1 className='container-row padding-v white-text'>Chaverut</h1>}
+        <h1 className='container-row padding-v white-text'>Chaverut</h1>
       </header>
 
       <Routes>
         <Route path="/" element={<LoginPage userLoggedIn={userLoggedIn} setUserLoggedIn={setUserLoggedIn} />} />
         <Route path="/feed" element={<FeedPage />} />
+        <Route path="/chats" element={<ChatsPage />} />
+        <Route path="/chat" element={<ChatPage />} />
+        <Route path="/shared-curriculum" element={<SharedCurriculumPage />} />
       </Routes>
 
       <footer>

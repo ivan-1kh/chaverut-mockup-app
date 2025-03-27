@@ -15,9 +15,11 @@ function LoginPage({ userLoggedIn, setUserLoggedIn }) {
 
     return (
         <div>
-            <form onSubmit={handleLogin}>
-                <input type="text" placeholder="Username" />
-                <input type="password" placeholder="Password" />
+            <form className='container-column-centered' onSubmit={handleLogin}>
+                <input className='textbox-design' type="text" placeholder="Username" />
+                <br />
+                <input className='textbox-design' type="password" placeholder="Password" />
+                <br />
                 <input type="submit" value="Login" />
             </form>
         </div>
