@@ -9,15 +9,15 @@ function SharedCurriculumPage() {
     const navigate = useNavigate();
 
     const handleSomething = () => {
-        navigate('/shared-curriculum');
+        navigate('/course');
     };
 
     return (
         <div className='container-column-centered'>
             <p>Laws</p>
-            <input type="button" value="View Course" />
+            <input onClick={handleSomething} type="button" value="View Course" />
             <p>Shabbat</p>
-            <input type="button" value="View Course" />
+            <input onClick={handleSomething} type="button" value="View Course" />
         </div>
     );
 }

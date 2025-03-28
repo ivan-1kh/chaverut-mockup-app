@@ -5,10 +5,13 @@ import './App.css';
 import LoginPage from "./pages/LoginPage";
 import FeedPage from "./pages/FeedPage";
 
-import NavigationBar from "./components/NavigationBar";
 import ChatsPage from './pages/ChatsPage';
 import ChatPage from './pages/ChatPage';
 import SharedCurriculumPage from './pages/SharedCurriculumPage';
+import CoursePage from './pages/CoursePage';
+import ChapterPage from './pages/ChapterPage';
+import QuestionnairePage from './pages/QuestionnairePage';
+import ResultsPage from './pages/ResultsPage';
 
 function App() {
 
@@ -27,12 +30,11 @@ function App() {
         <Route path="/chats" element={<ChatsPage />} />
         <Route path="/chat" element={<ChatPage />} />
         <Route path="/shared-curriculum" element={<SharedCurriculumPage />} />
+        <Route path="/course" element={<CoursePage />} />
+        <Route path="/chapter" element={<ChapterPage />} />
+        <Route path="/questionnaire" element={<QuestionnairePage />} />
+        <Route path="/results" element={<ResultsPage />} />
       </Routes>
-
-      <footer>
-        {userLoggedIn && <NavigationBar />}
-      </footer>
-
     </div>
   );
 }

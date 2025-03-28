@@ -17,9 +17,9 @@ function ChatsPage() {
             <div className='container-column-centered' onClick={handleSomething}>
                 <PersonChat name="Yechiel Ben Ari" pfp="./pfp1.jpeg" />
                 <br />
-                <PersonChat name="Donald Dukski" pfp="./pfp2.jpg" />
+                <PersonChat name="Popeye Ben Yehuda" pfp="./pfp2.jpg" />
                 <br />
-                <PersonChat name="Popeye Ben Yehuda" pfp="./pfp3.webp" />
+                <PersonChat name="Donald Dukski" pfp="./pfp3.webp" />
             </div>
         </div>
     );

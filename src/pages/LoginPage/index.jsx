@@ -10,17 +10,20 @@ function LoginPage({ userLoggedIn, setUserLoggedIn }) {
         event.preventDefault();
         
         setUserLoggedIn(true);
-        navigate('/feed');
+        navigate('/questionnaire');
     };
 
     return (
         <div>
-            <form className='container-column-centered' onSubmit={handleLogin}>
-                <input className='textbox-design' type="text" placeholder="Username" />
+            <form className='container-column' onSubmit={handleLogin}>
+                <h1>Sign Up</h1>
                 <br />
-                <input className='textbox-design' type="password" placeholder="Password" />
                 <br />
-                <input type="submit" value="Login" />
+                <br />
+                <br />
+                <input className='textbox-design' type="text" placeholder="Phone Number" />
+                <br />
+                <input type="submit" value="Sign Up" />
             </form>
         </div>
     );
