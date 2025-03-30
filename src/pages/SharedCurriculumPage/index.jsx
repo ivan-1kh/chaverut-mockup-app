@@ -1,9 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import PersonChat from '../../components/PersonChat';
-import MessageInputBox from '../../components/MessageInputBox';
-
 function SharedCurriculumPage() {
 
     const navigate = useNavigate();
@@ -14,9 +11,13 @@ function SharedCurriculumPage() {
 
     return (
         <div className='container-column-centered'>
-            <p>Laws</p>
+            <p>Shabbat Laws</p>
             <input onClick={handleSomething} type="button" value="View Course" />
-            <p>Shabbat</p>
+            <p>Talmud and Halacha</p>
+            <input onClick={handleSomething} type="button" value="View Course" />
+            <p>Biblical and Torah Study</p>
+            <input onClick={handleSomething} type="button" value="View Course" />
+            <p>Chassidus and Spirituality</p>
             <input onClick={handleSomething} type="button" value="View Course" />
         </div>
     );

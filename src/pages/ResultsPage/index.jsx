@@ -11,9 +11,9 @@ function ResultsPage() {
 
     return (
         <div className='container-column'>
-            Here are your results:
-            bla bla
-            <input onClick={handleSomething} type="button" value="Go to feed (matching)" />
+            <h2>Here are your results:</h2>
+            <p style={{"text-align": "center"}}>Your learning style appears to be more independent.</p>
+            <input onClick={handleSomething} type="button" value="Go to feed" />
         </div>
     );
 }

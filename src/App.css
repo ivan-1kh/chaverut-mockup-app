@@ -133,3 +133,53 @@ footer {
   padding: 1rem;
   border-radius: 1rem;
 }
+
+button, input[type="button"], input[type="submit"] {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.bigBtn {
+  height: 4rem;
+}
+
+.bigPfp {
+  width: 100%;
+}
+
+.acceptOrRejectContainer {
+  background-color: rgba(0,74,173,255);
+}
+
+.acceptBtn {
+  background-color: rgba(0, 128, 0, 0.626) !important;
+  position: absolute;
+  right: 0 !important;
+}
+
+.rejectBtn {
+  background-color: lightcoral !important;
+  position: absolute;
+  left: 0 !important;
+}
+
+.acceptBtn, .rejectBtn {
+  color: black !important;
+}

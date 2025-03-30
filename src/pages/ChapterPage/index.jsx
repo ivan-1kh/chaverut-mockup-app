@@ -25,20 +25,20 @@ function ChapterPage() {
     };
 
     const openBookAmazonAffiliate = () => {
-        navigate('/shared-curriculum');
+        window.open("https://a.co/d/2D0hRCP", "_blank").focus();
     };
 
     return (
         <div className='container-column'>
-            <input onClick={openDocument} type="button" value="Document" />
+            <input className="bigBtn" onClick={openDocument} type="button" value="Document" />
             <br />
-            <input onClick={openLecture} type="button" value="Lecture" />
+            <input className="bigBtn" onClick={openLecture} type="button" value="Lecture" />
             <br />
-            <input onClick={openSourceSheet} type="button" value="Source Sheet" />
+            <input className="bigBtn" onClick={openSourceSheet} type="button" value="Source Sheet" />
             <br />
-            <input onClick={openArticle} type="button" value="Article" />
+            <input className="bigBtn" onClick={openArticle} type="button" value="Article" />
             <br />
-            <input onClick={openBookAmazonAffiliate} type="button" value="Book (Amazon)" />
+            <input className="bigBtn" onClick={openBookAmazonAffiliate} type="button" value="Book (Amazon)" />
             <br />
         </div>
     );
