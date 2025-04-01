@@ -183,3 +183,40 @@ button, input[type="button"], input[type="submit"] {
 .acceptBtn, .rejectBtn {
   color: black !important;
 }
+
+.add-margin {
+  margin: 0.2rem;
+}
+
+.container-column-centered-q {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*  */
+
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px); /* Optional: move up slightly */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-in-from-bottom {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-start-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+}
