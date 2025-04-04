@@ -15,6 +15,7 @@ function CoursePage() {
     return (
         <div style={{"margin-top": "6rem"}} className='container-column'>
             <div className='container-column-centered'>
+                <h1 style={{"margin-top": "5rem"}}>Shabbat Laws</h1>
                 <h3>Chapter 1</h3>
                 <input onClick={handleSomething} type="button" value="Foundations of Shabbat" />
                 <br />

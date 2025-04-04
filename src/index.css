@@ -25,3 +25,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  background-color: #fffdf8;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fffdf8 40px ), repeating-linear-gradient( #f6f5f955, #f6f5f9 );
+}

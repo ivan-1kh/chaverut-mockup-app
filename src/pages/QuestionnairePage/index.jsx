@@ -76,7 +76,7 @@ function QuestionnairePage() {
 
   return (
     <div className="container-column-centered">
-      <h2>Getting to know you</h2>
+      <h2 className='bold'>Getting to know you</h2>
       <h2>Learning Goals & Objectives</h2>
       <h3>{questionNumber}/{Object.keys(questions).length}</h3>
       <div className={`container-column-centered-q ${animationState}`}>

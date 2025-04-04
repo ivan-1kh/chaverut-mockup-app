@@ -11,6 +11,7 @@ function SharedCurriculumPage() {
 
     return (
         <div className='container-column-centered'>
+                <h1 style={{"margin-top": "5rem"}}>Curriculum</h1>
             <p>Shabbat Laws</p>
             <input onClick={handleSomething} type="button" value="View Course" />
             <p>Talmud and Halacha</p>

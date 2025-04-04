@@ -9,19 +9,19 @@ function ChapterPage() {
     const navigate = useNavigate();
 
     const openDocument = () => {
-        navigate('/shared-curriculum');
+        navigate('/document');
     };
 
     const openLecture = () => {
-        navigate('/shared-curriculum');
+        navigate('/lecture');
     };
 
     const openSourceSheet = () => {
-        navigate('/shared-curriculum');
+        navigate('/source-sheet');
     };
 
     const openArticle = () => {
-        navigate('/shared-curriculum');
+        navigate('/article');
     };
 
     const openBookAmazonAffiliate = () => {
@@ -30,15 +30,17 @@ function ChapterPage() {
 
     return (
         <div className='container-column'>
-            <input className="bigBtn" onClick={openDocument} type="button" value="Document" />
+            
+                <h1 style={{"margin-top": "5rem"}}>Foundations of Shabbat</h1>
+            <input className="bigBtn chptr" onClick={openDocument} type="button" value="Document" />
             <br />
-            <input className="bigBtn" onClick={openLecture} type="button" value="Lecture" />
+            <input className="bigBtn chptr" onClick={openLecture} type="button" value="Lecture" />
             <br />
-            <input className="bigBtn" onClick={openSourceSheet} type="button" value="Source Sheet" />
+            <input className="bigBtn chptr" onClick={openSourceSheet} type="button" value="Source Sheet" />
             <br />
-            <input className="bigBtn" onClick={openArticle} type="button" value="Article" />
+            <input className="bigBtn chptr" onClick={openArticle} type="button" value="Article" />
             <br />
-            <input className="bigBtn" onClick={openBookAmazonAffiliate} type="button" value="Book (Amazon)" />
+            <input className="bigBtn chptr" onClick={openBookAmazonAffiliate} type="button" value="Book (Amazon)" />
             <br />
         </div>
     );

@@ -1,10 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import LoginPage from "./pages/LoginPage";
 import FeedPage from "./pages/FeedPage";
-
 import ChatsPage from './pages/ChatsPage';
 import ChatPage from './pages/ChatPage';
 import SharedCurriculumPage from './pages/SharedCurriculumPage';
@@ -12,14 +11,16 @@ import CoursePage from './pages/CoursePage';
 import ChapterPage from './pages/ChapterPage';
 import QuestionnairePage from './pages/QuestionnairePage';
 import ResultsPage from './pages/ResultsPage';
+import DocumentPage from './pages/DocumentPage';
+import LecturePage from './pages/LecturePage';
+import SourceSheetPage from './pages/SourceSheetPage';
+import ArticlePage from './pages/ArticlePage';
 
 function App() {
-
   const [userLoggedIn, setUserLoggedIn] = React.useState(false);
 
   return (
     <div className="App container-column">
-
       <header>
         <h1 className='container-row padding-v white-text'>Chaverut</h1>
       </header>
@@ -34,6 +35,10 @@ function App() {
         <Route path="/chapter" element={<ChapterPage />} />
         <Route path="/questionnaire" element={<QuestionnairePage />} />
         <Route path="/results" element={<ResultsPage />} />
+        <Route path="/document" element={<DocumentPage />} />
+        <Route path="/lecture" element={<LecturePage />} />
+        <Route path="/source-sheet" element={<SourceSheetPage />} />
+        <Route path="/article" element={<ArticlePage />} />
       </Routes>
     </div>
   );

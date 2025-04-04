@@ -8,7 +8,7 @@ function LoginPage({ userLoggedIn, setUserLoggedIn }) {
     const handleLogin = (event) => {
 
         event.preventDefault();
-        
+
         setUserLoggedIn(true);
         navigate('/questionnaire');
     };
@@ -21,7 +21,10 @@ function LoginPage({ userLoggedIn, setUserLoggedIn }) {
                 <br />
                 <br />
                 <br />
-                <input className='textbox-design' type="text" placeholder="Phone Number" />
+                <div class="input-container">
+                    <img src="numpad.svg" alt="Numpad" class="numpad-icon" />
+                    <input class="textbox-design" type="text" placeholder="Phone Number" />
+                </div>
                 <br />
                 <input type="submit" value="Sign Up" />
             </form>
