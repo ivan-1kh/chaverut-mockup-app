@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-function PersonChat({ name, pfp }) {
+function PersonChat({ name, pfp, callIcon }) {
 
     const navigate = useNavigate();
 
@@ -15,6 +15,7 @@ function PersonChat({ name, pfp }) {
         <div onClick={handleNavigation} className='container-row chat-item padding-v'>
             <img className='pfp' src={pfp} />
             <h2 className='white-text chat-item-name'>{name}</h2>
+            {callIcon && <img className='callIcon' src="callIcon.png" />}
         </div>
     );
 }

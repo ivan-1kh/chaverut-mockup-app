@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-function MessageInputBox({ callIcon }) {
+function MessageInputBox() {
 
     const navigate = useNavigate();
 
@@ -17,7 +17,6 @@ function MessageInputBox({ callIcon }) {
             <div className='button'>
                 <img style={{"width": "2rem"}} src="msgIcon.svg" />
             </div>
-            {callIcon && <img className='callIcon' src="callIcon.jpg" />}
         </div>
     );
 }

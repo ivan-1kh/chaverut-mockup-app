@@ -184,24 +184,67 @@ button, input[type="button"], input[type="submit"] {
   width: 100%;
 }
 
-.acceptOrRejectContainer {
-  background-color: rgba(0,74,173,255);
+.bullet {
+  justify-content: start;  
 }
 
-.acceptBtn {
-  background-color: rgba(0, 128, 0, 0.626) !important;
-  position: absolute;
-  right: 0 !important;
+.profileInfoContainer {
+  background-color: rgba(128, 128, 128, 0.102);
+  border: 1px gray solid;
+  border-radius: 4rem 4rem 0 0;
+  padding: 2rem;
 }
 
-.rejectBtn {
-  background-color: lightcoral !important;
-  position: absolute;
-  left: 0 !important;
+.acceptRejectButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.acceptBtn, .rejectBtn {
-  color: black !important;
+.arrow-left,
+.arrow-right {
+  /* Basic styling for the arrows (adjust as needed) */
+  cursor: pointer; /* Indicate they are interactive */
+  display: inline-block; /* Allows them to sit side-by-side or inline */
+  /* Add any other styling like size, color, etc. */
+}
+
+.arrow-left {
+  animation: wobble-left 0.5s infinite alternate; /* Apply the left wobble animation */
+}
+
+.arrow-right {
+  animation: wobble-right 0.5s infinite alternate; /* Apply the right wobble animation */
+}
+
+.icon-svg {
+  width: 3rem;
+  margin-right: 2rem;
+}
+
+@keyframes wobble-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5px); /* Adjust the wobble distance */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes wobble-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px); /* Adjust the wobble distance */
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .add-margin {
@@ -292,7 +335,6 @@ header {
 
 .callIcon {
   position: absolute;
-  right: 1rem;
+  right: 2rem;
   width: 3.5rem;
-  top: 8rem;
 }

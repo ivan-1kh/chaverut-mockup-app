@@ -15,7 +15,7 @@ function ChatPage() {
     return (
     <div className='container-column'>
             <div className='container-column-centered chat-inside-header'>
-                <PersonChat name="Yechiel Ben Ari" pfp="./pfp1.jpeg" />
+                <PersonChat name="Yechiel Ben Ari" pfp="./pfp1.jpeg" callIcon="true" />
                 <br />
                 <input onClick={handleSomething} type="button" className='curriculum-button' value="Shared Curriculum" />
             </div>
@@ -46,7 +46,7 @@ function ChatPage() {
             <br />
             <br />
             <br />
-            <MessageInputBox callIcon="true" />
+            <MessageInputBox />
         </div>
     );
 }
