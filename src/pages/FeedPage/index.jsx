@@ -189,32 +189,32 @@ function FeedPage() {
                                         <img className='icon-svg' src="./learning.svg" />
                                         <h1>
                                             {matched == 1 && "Jewish History, Torah Studies, and Jewish Philosophy"}
-                                            {matched == 2 && "Debating Strangers"}
-                                            {matched == 3 && "Torah Studies and Talmud"}
+                                            {matched == 2 && "Talmud and Halacha, Shabbat Laws. and Jewish History"}
+                                            {matched == 3 && "Jewish Philosophy, Kabbalah and Mysticism, and Jewish Ethics and Mussar"}
                                         </h1>
                                     </div>
                                     <div className='bullet container-row'>
                                         <img className='icon-svg' src="./sparkle.svg" />
                                         <h1>
                                             {matched == 1 && "Gradual and Reflective"}
-                                            {matched == 2 && "Deliberate and Iterative"}
-                                            {matched == 3 && "Exploratory and Synthesizing"}
+                                            {matched == 2 && "Gradual and Reflective"}
+                                            {matched == 3 && "Gradual and Reflective"}
                                         </h1>
                                     </div>
                                     <div className='bullet container-row'>
                                         <img className='icon-svg' src="./calendar.svg" />
                                         <h1>
                                             {matched == 1 && "In person, Afternoon, 1 session per week"}
-                                            {matched == 2 && "Online, Evening, 4 sessions per week"}
-                                            {matched == 3 && "In person, Afternoon, 2 sessions per week"}
+                                            {matched == 2 && "Afternoon. 2 sessions a week"}
+                                            {matched == 3 && "Morning. 3 sessions a week"}
                                         </h1>
                                     </div>
                                     <div className='bullet container-row'>
                                         <img className='icon-svg' src="./goals.svg" />
                                         <h1>
                                             {matched == 1 && "Deepen Knowledge of Jewish Text and Explore Jewish Issues"}
-                                            {matched == 2 && "Learn How to Win an Argument"}
-                                            {matched == 3 && "Learn Jewish Spirituality and Religiousness"}
+                                            {matched == 2 && "Deepen Knowledge of Jewish Texts, Enhance my understanding of Jewish texts."}
+                                            {matched == 3 && "Deepen Knowledge of Jewish Texts, Learn Jewish Ethics and Values"}
                                         </h1>
                                     </div>
                                 </div>
