@@ -79,8 +79,7 @@ function QuestionnairePage() {
 
   return (
     <div className="container-column-centered">
-      <h2 className='bold' style={{"font-size": "2rem"}}>Getting to know you</h2>
-      <h2>Learning Goals & Objectives</h2>
+      <h2 className='bold' style={{"font-size": "2rem", position: "absolute", top: "10rem"}}>Getting to know you</h2>
       <h3>{questionNumber}/{Object.keys(questions).length}</h3>
       <div className={`container-column-centered-q ${animationState}`}>
         <h2>{questionText}</h2>

@@ -21,25 +21,27 @@ function App() {
 
   return (
     <div className="App container-column">
-      <header>
+      <header style={{"display": "block"}}>
         <h1 className='container-row padding-v white-text'>Chaverut</h1>
       </header>
 
-      <Routes>
-        <Route path="/" element={<LoginPage userLoggedIn={userLoggedIn} setUserLoggedIn={setUserLoggedIn} />} />
-        <Route path="/feed" element={<FeedPage />} />
-        <Route path="/chats" element={<ChatsPage />} />
-        <Route path="/chat" element={<ChatPage />} />
-        <Route path="/shared-curriculum" element={<SharedCurriculumPage />} />
-        <Route path="/course" element={<CoursePage />} />
-        <Route path="/chapter" element={<ChapterPage />} />
-        <Route path="/questionnaire" element={<QuestionnairePage />} />
-        <Route path="/results" element={<ResultsPage />} />
-        <Route path="/document" element={<DocumentPage />} />
-        <Route path="/lecture" element={<LecturePage />} />
-        <Route path="/source-sheet" element={<SourceSheetPage />} />
-        <Route path="/article" element={<ArticlePage />} />
-      </Routes>
+      <span style={{"display": "block", "minHeight": "100%", "width": "100%"}}>
+        <Routes>
+          <Route path="/" element={<LoginPage userLoggedIn={userLoggedIn} setUserLoggedIn={setUserLoggedIn} />} />
+          <Route path="/feed" element={<FeedPage />} />
+          <Route path="/chats" element={<ChatsPage />} />
+          <Route path="/chat" element={<ChatPage />} />
+          <Route path="/shared-curriculum" element={<SharedCurriculumPage />} />
+          <Route path="/course" element={<CoursePage />} />
+          <Route path="/chapter" element={<ChapterPage />} />
+          <Route path="/questionnaire" element={<QuestionnairePage />} />
+          <Route path="/results" element={<ResultsPage />} />
+          <Route path="/document" element={<DocumentPage />} />
+          <Route path="/lecture" element={<LecturePage />} />
+          <Route path="/source-sheet" element={<SourceSheetPage />} />
+          <Route path="/article" element={<ArticlePage />} />
+        </Routes>
+      </span>
     </div>
   );
 }

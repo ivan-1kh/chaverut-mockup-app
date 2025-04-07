@@ -33,9 +33,9 @@ html, body, #root {
 }
 
 header {
-  position: absolute;
-  top: 0;
-  width: 100%;
+  /* width: 100%; */
+  /* position: absolute; */
+  /* top: 0; */
   background-color: rgba(0,74,173,255);
 }
 
@@ -180,6 +180,10 @@ button, input[type="button"], input[type="submit"] {
   height: 4rem;
 }
 
+body {
+  margin: 0 !important;
+}
+
 .bigPfp {
   width: 100%;
 }
@@ -189,8 +193,10 @@ button, input[type="button"], input[type="submit"] {
 }
 
 .profileInfoContainer {
-  background-color: rgba(128, 128, 128, 0.102);
-  border: 1px gray solid;
+  position: relative;
+  top: -3.5rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px rgb(178, 178, 178) solid;
   border-radius: 4rem 4rem 0 0;
   padding: 2rem;
 }
@@ -256,6 +262,8 @@ button, input[type="button"], input[type="submit"] {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 /*  */

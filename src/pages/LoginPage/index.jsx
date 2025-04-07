@@ -14,17 +14,23 @@ function LoginPage({ userLoggedIn, setUserLoggedIn }) {
     };
 
     return (
-        <div>
-            <form className='container-column' onSubmit={handleLogin}>
-                <h1>Sign Up</h1>
-                <br />
-                <br />
-                <br />
-                <br />
+        <div className='container-column-centered'>
+            <h1 style={{fontSize: "3rem"}}>Sign Up</h1>
+            <br />
+            <br />
+            <br />
+            <br />
+            <form style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center"
+            }} onSubmit={handleLogin}>
                 <div class="input-container">
                     <img src="numpad.svg" alt="Numpad" class="numpad-icon" />
                     <input class="textbox-design" type="text" placeholder="Phone Number" />
                 </div>
+                <br />
                 <br />
                 <input type="submit" value="Sign Up" />
             </form>
