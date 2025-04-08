@@ -15,7 +15,7 @@ function ChatsPage() {
         <div className='container-column'>
             <p className='large-text'>Chats</p>
             <div className='container-column-centered' onClick={handleSomething}>
-                <PersonChat name="Yechiel Ben Ari" pfp="./pfp1.jpeg" />
+                <PersonChat name="Yechiel Ben Ari" pfp="./pfp3.jpeg" />
                 <br />
                 <PersonChat name="Popeye Ben Yehuda" pfp="./pfp2.jpg" />
                 <br />

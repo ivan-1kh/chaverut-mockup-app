@@ -154,7 +154,7 @@ function FeedPage() {
             <div className='container-column'>
                 {matched > 3 ?
                     <><p className='large-text'>You've got a match!</p>
-                        <PersonChat name="Yechiel Ben Ari" pfp="./pfp1.jpeg" /></> :
+                        <PersonChat name="Yechiel Ben Ari" pfp="./pfp3.jpeg" /></> :
 
                     <>
 
@@ -164,18 +164,18 @@ function FeedPage() {
 
                                 <div className='bullet container-row' style={{ "justify-content": "center" }}>
                                     <h1>
-                                        {matched == 1 && "Yechiel Ben Ari, 19"}
-                                        {matched == 2 && "Ben Shapiro, 67"}
-                                        {matched == 3 && "Ben Badman, 14"}
+                                        {matched == 1 && "Ben Badman, 21"}
+                                        {matched == 2 && "Ben Shapiro, 18"}
+                                        {matched == 3 && "Yechiel Ben Ari, 19"}
                                     </h1>
                                 </div>
 
                                 <div className='bullet container-row' style={{ "justify-content": "center" }}>
                                     <img className='icon-svg' src="./location.svg" />
                                     <h1>
-                                        {matched == 1 && "NYC"}
-                                        {matched == 2 && "Tacoma"}
-                                        {matched == 3 && "Afghanistan"}
+                                        {matched == 1 && "Brooklyn"}
+                                        {matched == 2 && "Newark"}
+                                        {matched == 3 && "Riverdale"}
                                     </h1>
                                 </div>
 
@@ -188,9 +188,9 @@ function FeedPage() {
                                     <div className='bullet container-row'>
                                         <img className='icon-svg' src="./learning.svg" />
                                         <h1>
-                                            {matched == 1 && "Jewish History, Torah Studies, and Jewish Philosophy"}
+                                            {matched == 1 && "Jewish Philosophy, Kabbalah and Mysticism, and Jewish Ethics and Mussar"}
                                             {matched == 2 && "Talmud and Halacha, Shabbat Laws. and Jewish History"}
-                                            {matched == 3 && "Jewish Philosophy, Kabbalah and Mysticism, and Jewish Ethics and Mussar"}
+                                            {matched == 3 && "Jewish History, Torah Studies, and Jewish Philosophy"}
                                         </h1>
                                     </div>
                                     <div className='bullet container-row'>
@@ -204,17 +204,17 @@ function FeedPage() {
                                     <div className='bullet container-row'>
                                         <img className='icon-svg' src="./calendar.svg" />
                                         <h1>
-                                            {matched == 1 && "In person, Afternoon, 1 session per week"}
+                                            {matched == 1 && "Morning. 3 sessions a week"}
                                             {matched == 2 && "Afternoon. 2 sessions a week"}
-                                            {matched == 3 && "Morning. 3 sessions a week"}
+                                            {matched == 3 && "In person, Afternoon, 1 session per week"}
                                         </h1>
                                     </div>
                                     <div className='bullet container-row'>
                                         <img className='icon-svg' src="./goals.svg" />
                                         <h1>
-                                            {matched == 1 && "Deepen Knowledge of Jewish Text and Explore Jewish Issues"}
+                                            {matched == 1 && "Deepen Knowledge of Jewish Texts, Learn Jewish Ethics and Values"}
                                             {matched == 2 && "Deepen Knowledge of Jewish Texts, Enhance my understanding of Jewish texts."}
-                                            {matched == 3 && "Deepen Knowledge of Jewish Texts, Learn Jewish Ethics and Values"}
+                                            {matched == 3 && "Deepen Knowledge of Jewish Text and Explore Jewish Issues"}
                                         </h1>
                                     </div>
                                 </div>
