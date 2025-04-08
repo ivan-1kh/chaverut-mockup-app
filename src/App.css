@@ -24,6 +24,14 @@ html, body, #root {
   width: 100%;
 }
 
+.main {
+  display: block;
+  min-height: 50vh;
+  width: 100%;
+  margin-top: calc(6rem + env(safe-area-inset-top));
+}
+
+
 .container-row {
   display: flex;
   flex-direction: row;

@@ -25,7 +25,7 @@ function App() {
         <h1 className='container-row padding-v white-text'>Chaverut</h1>
       </header>
 
-      <span style={{"display": "block", "minHeight": "50vh", "width": "100%", "marginTop": "6rem"}}>
+      <span className='main'>
         <Routes>
           <Route path="/" element={<LoginPage userLoggedIn={userLoggedIn} setUserLoggedIn={setUserLoggedIn} />} />
           <Route path="/feed" element={<FeedPage />} />
